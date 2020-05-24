@@ -66,11 +66,21 @@ The content `<div>` is where all your content goes.
         margin-top: 0;
     }
 
-.content-subhead {
-    margin: 50px 0 20px 0;
-    font-weight: 300;
-    color: #888;
+    .header h3 {
+        font-weight: 300;
+        color: #ccc;
+        font-size: 2em;
+        padding: 0;
+        margin-top: 0;
+    }
+.content {
+     text-align: left;
+     margin: 50px 0 20px 0;
 }
+     .content-subhead {
+        font-weight: 300;
+        color: #888;
+     }
 
 
 
