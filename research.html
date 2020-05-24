@@ -7,42 +7,44 @@
     <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
     <link rel="stylesheet" href="css/pure/styles.css">
+    <style>
+        .pdfobject-container { height: 30rem; border: 1rem solid rgba(0,0,0,.1); }
+    </style>
 </head>
 
-<div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
+<body>
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
         <!-- Hamburger icon -->
-        <span></span>
-    </a>
+            <span></span>
+        </a>
 
-    <div id="menu">
-        <div class="pure-menu">
-            <a class="pure-menu-heading" href="index.html">Home</a>
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="index.html">Home</a>
 
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Research</a></li>
-                <li class="pure-menu-item"><a href="projects.html" class="pure-menu-link">Coding Projects</a></li>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Research</a></li>
+                    <li class="pure-menu-item"><a href="projects.html" class="pure-menu-link">Coding Projects</a></li>
 
-                <li class="pure-menu-item menu-item-divided pure-menu-selected">
-                    <a href="#" class="pure-menu-link">Services</a>
-                </li>
+                    <li class="pure-menu-item menu-item-divided pure-menu-selected">
+                        <a href="#" class="pure-menu-link">Services</a>
+                    </li>
 
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-            </ul>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div id="reu">
+        <div id="reu"></div>
+
         <script src="js/pdfobject.js"></script>
         <script>PDFObject.embed("https://github.com/beancamille/portfolio/blob/master/attachments/REU_Paper.pdf", "#reu");</script>
-        <style>
-            .pdfobject-container { height: 30rem; border: 1rem solid rgba(0,0,0,.1); }
-        </style>
-    </div>
-</div>
 
-<script src="js/pure/ui.js"></script>
+    </div>
+
+    <script src="js/pure/ui.js"></script>
 
 </body>
 </html>
