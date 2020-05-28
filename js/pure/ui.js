@@ -33,12 +33,16 @@
     }
     
     function handleEvent(e) {
-        if (e.target.id === menuLink.id) {
-            return toggleAll(e);
-        }
+        // add if/else for target is menu
+        if (e.target.id !== menu.id) {
+            
+            if (e.target.id === menuLink.id) {
+                return toggleAll(e);
+            }
         
-        if (menu.className.indexOf('active') !== -1) {
-            return toggleAll(e);
+            if (menu.className.indexOf('active') !== -1) {
+                return toggleAll(e);
+             }
         }
     }
     
