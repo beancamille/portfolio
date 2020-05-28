@@ -34,8 +34,10 @@
     
     function handleEvent(e) {
         // add if/else for target is menu
+        var loggerbee = e.target.id;
+        console.log('loggerbee:', loggerbee);
         if (e.target.id !== menu.id) {
-            
+
             if (e.target.id === menuLink.id) {
                 return toggleAll(e);
             }
