@@ -33,7 +33,6 @@
     }
     
     function handleEvent(e) {
-        // add if/else for target is menu
         if (e.target.id === menuLink.id) {
              return toggleAll(e);
         }
