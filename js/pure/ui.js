@@ -3,7 +3,8 @@
     var layout   = document.getElementById('layout'),
         menu     = document.getElementById('menu'),
         menuLink = document.getElementById('menuLink');
-
+    //find out where hamburger is from
+    //toggleclass, toggleall, handlevent
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
             length = classes.length,
@@ -26,7 +27,6 @@
     function toggleAll(e) {
         var active = 'active';
 
-        e.preventDefault();
         toggleClass(layout, active);
         toggleClass(menu, active);
         toggleClass(menuLink, active);
@@ -34,17 +34,12 @@
     
     function handleEvent(e) {
         // add if/else for target is menu
-        var loggerbee = e.target.id;
-        console.log('loggerbee:', loggerbee);
-        if (e.target.id !== menu.id) {
-
-            if (e.target.id === menuLink.id) {
-                return toggleAll(e);
-            }
+        if (e.target.id === menuLink.id) {
+             return toggleAll(e);
+        }
         
-            if (menu.className.indexOf('active') !== -1) {
-                return toggleAll(e);
-             }
+        if (menu.className.indexOf('active') !== -1) {
+            return toggleAll(e);
         }
     }
     
